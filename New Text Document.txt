@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neha's Birthday</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Happy Birthday, Neha!</h1>
+        <p>Celebrating the one-of-a-kind Neha!</p>
+    </header>
+
+    <section id="about">
+        <h2>About Neha</h2>
+        <p>Neha is an amazing friend who loves music, anime, and creating unforgettable memories. Here are some fun facts about her:</p>
+        <ul>
+            <li>Favorite Music Genre: Phonk</li>
+            <li>Favorite Anime: Naruto</li>
+            <li>Hobbies: Drawing and editing</li>
+            <li>Favorite Color: Emerald Green</li>
+        </ul>
+        <p>This website is dedicated to celebrating her birthday with her favorite things!</p>
+    </section>
+
+    <section id="categories">
+        <h2>Explore Neha's Favorites</h2>
+        <div class="button-container">
+            <button onclick="location.href='#music'">Music Corner</button>
+            <button onclick="location.href='#anime'">Anime Corner</button>
+            <button onclick="location.href='#memories'">Memories</button>
+        </div>
+    </section>
+
+    <section id="music">
+        <h2>Music Corner</h2>
+        <p>Neha's favorite tracks:</p>
+        <ul>
+            <li>Die with a Smile</li>
+            <li>Chill Vibes Playlist</li>
+            <li>Top Phonk Tracks</li>
+        </ul>
+        <div class="image-gallery">
+            <img src="music1.jpg" alt="Music Image 1">
+            <img src="music2.jpg" alt="Music Image 2">
+        </div>
+    </section>
+
+    <section id="anime">
+        <h2>Anime Corner</h2>
+        <p>Neha's top anime picks:</p>
+        <div class="anime-list">
+            <div class="anime-item">
+                <img src="naruto.jpg" alt="Naruto">
+                <h3 onclick="toggleDescription('naruto-desc')">Naruto</h3>
+                <p id="naruto-desc" class="anime-description">Naruto is an anime about a young ninja with a dream to become the strongest Hokage of his village!</p>
+            </div>
+            <div class="anime-item">
+                <img src="aot.jpg" alt="Attack on Titan">
+                <h3 onclick="toggleDescription('aot-desc')">Attack on Titan</h3>
+                <p id="aot-desc" class="anime-description">In a world where humanity is on the brink of extinction, giant Titans threaten their survival.</p>
+            </div>
+            <div class="anime-item">
+                <img src="mha.jpg" alt="My Hero Academia">
+                <h3 onclick="toggleDescription('mha-desc')">My Hero Academia</h3>
+                <p id="mha-desc" class="anime-description">Follow Izuku Midoriya's journey in a world where nearly everyone has superpowers!</p>
+            </div>
+        </div>
+        <div class="image-gallery">
+            <img src="anime1.jpg" alt="Anime Image 1">
+            <img src="anime2.jpg" alt="Anime Image 2">
+        </div>
+    </section>
+
+    <section id="memories">
+        <h2>Memories</h2>
+        <p>Share your favorite memories and embarrassing moments with Neha:</p>
+        <textarea rows="5" cols="40" placeholder="Type your favorite memories here..."></textarea>
+        <h3>Favorite Edits:</h3>
+        <div class="link-gallery">
+            <a href="link-to-edit1" target="_blank">Favorite Edit 1</a>
+            <a href="link-to-edit2" target="_blank">Favorite Edit 2</a>
+        </div>
+    </section>
+
+    <script>
+        function toggleDescription(id) {
+            var desc = document.getElementById(id);
+            desc.style.display = (desc.style.display === "none" || desc.style.display === "") ? "block" : "none";
+        }
+    </script>
+</body>
+</html>
